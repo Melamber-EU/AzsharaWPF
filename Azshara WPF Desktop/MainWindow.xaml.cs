@@ -37,8 +37,14 @@ namespace Azshara_WPF_Desktop
             
             List<RaidersM> raidersData = RaidersModels.GetRaiders();
             ObservableCollection<RaidersM> observableCollection = new ObservableCollection<RaidersM>();
+            foreach (var record in raidersData)
+            {
+                observableCollection.Add(new RaidersM {
+                    name = record.name
+                });
+            }
             //Bind the DataGrid to the customer data
-            dgvSoaks.DataContext = raidersData;
+            dgvSoaks.DataContext = observableCollection;
         }
     }
 }
