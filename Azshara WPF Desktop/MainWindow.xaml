@@ -1,0 +1,34 @@
+﻿<Window x:Class="Azshara_WPF_Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Azshara_WPF_Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgvSoaks" HorizontalAlignment="Left" Height="321" Margin="63,56,0,0" VerticalAlignment="Top" Width="585">
+            <DataGrid.Columns>
+                <DataGridComboBoxColumn Header="Raider 1"
+                                        SelectedItemBinding="{Binding name}">
+                </DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Raider 2"
+                                        SelectedItemBinding="{Binding name}">
+                </DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Raider 3"
+                                        SelectedItemBinding="{Binding name}">
+                </DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Raider 4"
+                                        SelectedItemBinding="{Binding name}">
+                </DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Raider 5"
+                                        SelectedItemBinding="{Binding name}">
+                </DataGridComboBoxColumn>
+                <DataGridTextColumn Header="Timer">
+
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
