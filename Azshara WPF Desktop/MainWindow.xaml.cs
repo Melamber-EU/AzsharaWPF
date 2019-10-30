@@ -44,7 +44,7 @@ namespace Azshara_WPF_Desktop
                 });
             }
             //Bind the DataGrid to the customer data
-            dgvSoaks.DataContext = observableCollection;
+            //dgvSoaks.DataContext = observableCollection;
         }
     }
 }
